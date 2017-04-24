@@ -1,0 +1,28 @@
+object NotepadForm: TNotepadForm
+  Left = 212
+  Top = 252
+  Width = 870
+  Height = 640
+  Caption = #1041#1083#1086#1082#1085#1086#1090
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Memo: TMemo
+    Left = 0
+    Top = 0
+    Width = 862
+    Height = 613
+    Align = alClient
+    Lines.Strings = (
+      'Memo')
+    ScrollBars = ssVertical
+    TabOrder = 0
+  end
+end
