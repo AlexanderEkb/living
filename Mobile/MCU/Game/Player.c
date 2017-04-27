@@ -598,7 +598,9 @@ static unsigned int Player_Flight() {
             Player->VSpeed = 127;
 
     } else {
-        if(CHAR_POSITION(PLAYER, P_BOTTOM_EDGE))
+        GetTileUnder(PLAYER);
+        if((CHAR_POSITION(PLAYER, P_BOTTOM_EDGE)) ||
+           CHAR_OBSTACLE(PLAYER, O_AT_BOTTOM))
             return BREAK;
         fs = LEFT_DIRECTION(Player->HSpeed)?&FallLeft:&FallRight;
         if(Animate(Player, fs, WITH_SPEEDS) & FRAME_CHANGED) {

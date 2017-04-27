@@ -90,6 +90,13 @@ void LocScripts_Log1() {
     Log_Draw();
 }
 
+void LocScripts_Log2() {
+    Game.Log.Row = 4;
+    Game.Log.Col = -3;
+    Game.Log.State = LOG_DIR_RIGHT;
+    Game.Log.Counter = 5;
+}
+
 /*
  *    __
  *   / /  ___  ___ _

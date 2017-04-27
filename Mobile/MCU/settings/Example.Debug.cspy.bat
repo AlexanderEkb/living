@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "D:\Work\Living\Mobile\MCU\Ver 0.1\settings\Example.Debug.general.xcl" --backend -f "D:\Work\Living\Mobile\MCU\Ver 0.1\settings\Example.Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "D:\Work\living\Mobile\MCU\settings\Example.Debug.general.xcl" --backend -f "D:\Work\living\Mobile\MCU\settings\Example.Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "D:\Work\Living\Mobile\MCU\Ver 0.1\settings\Example.Debug.general.xcl" "--debug_file=%~1" --backend -f "D:\Work\Living\Mobile\MCU\Ver 0.1\settings\Example.Debug.driver.xcl" 
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 7.5\common\bin\cspybat" -f "D:\Work\living\Mobile\MCU\settings\Example.Debug.general.xcl" "--debug_file=%~1" --backend -f "D:\Work\living\Mobile\MCU\settings\Example.Debug.driver.xcl" 
 
 @echo off 
 :end

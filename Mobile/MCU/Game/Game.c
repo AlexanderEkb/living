@@ -46,7 +46,7 @@
 #define AT_LEFT				(0x0000)
 #define AT_RIGHT			(0x2500)	/* 37 dec */
 
-#define CONST_LOG_Y			(0x00c0)
+#define CONST_LOG_Y			/*(0x00c0)*/(0x0000)
 
 #define LOWER				(Player->Y>MIDDLE)
 

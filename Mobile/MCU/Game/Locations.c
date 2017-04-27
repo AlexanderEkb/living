@@ -525,9 +525,15 @@ void *Scripts0[] = {
     (void *)&LocScripts_Log1,
     NULL
 };
+
+void *Scripts1[] = {
+    (void *)&LocScripts_Log2,
+    (void *)&LocScripts_Log1,
+    NULL
+};
 /****************************************/
 const LocationInfo_t Location00 = {0xFF, 0x11, 0x81, 0x81, 0x03, &Items00, Scripts0};
-const LocationInfo_t Location01 = {0x07, 0xFF, 0x18, 0x82, 0x03, &Items01, NULL};
+const LocationInfo_t Location01 = {0x07, 0xFF, 0x18, 0x82, 0x03, &Items01, Scripts1};
 const LocationInfo_t Location02 = {0xFF, 0xFF, 0x39, 0x83, 0x01, &Items02, NULL};
 const LocationInfo_t Location03 = {0xFF, 0xFF, 0x06, 0xFF, 0x02, &Items03, NULL};
 const LocationInfo_t Location04 = {0x05, 0x05, 0x11, 0x11, 0x03, &Items04, NULL};
